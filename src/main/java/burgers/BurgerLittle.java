@@ -13,10 +13,10 @@ public class BurgerLittle implements Burger {
 
    private List<Supplements> supplements;
 
-    public BurgerLittle() {
+    public BurgerLittle(Meat meat, Tomato tomato) {
         this.supplements = new ArrayList<Supplements>();
-        supplements.add(new Meat());
-        supplements.add(new Tomato());
+        supplements.add(meat);
+        supplements.add(tomato);
     }
 
     @Override

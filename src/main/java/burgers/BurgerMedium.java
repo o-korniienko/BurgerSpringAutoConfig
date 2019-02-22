@@ -14,11 +14,11 @@ public class BurgerMedium implements Burger {
 
    private List<Supplements> supplements;
 
-    public BurgerMedium() {
+    public BurgerMedium(Meat meat, Potatoes potatoes, Peppers peppers) {
         this.supplements = new ArrayList<Supplements>();
-        supplements.add(new Meat());
-        supplements.add(new Peppers());
-        supplements.add(new Potatoes());
+        supplements.add(meat);
+        supplements.add(potatoes);
+        supplements.add(peppers);
     }
 
     @Override

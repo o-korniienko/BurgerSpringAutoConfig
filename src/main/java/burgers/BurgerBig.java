@@ -11,12 +11,12 @@ public class BurgerBig implements Burger {
 
     private List<Supplements> supplements;
 
-    public BurgerBig() {
+    public BurgerBig(Meat meat, Salat salat, Cheese cheese, Tomato tomato) {
         this.supplements = new ArrayList<Supplements>();
-        supplements.add(new Meat());
-        supplements.add(new Salat());
-        supplements.add(new Cheese());
-        supplements.add(new Tomato());
+        supplements.add(meat);
+        supplements.add(salat);
+        supplements.add(cheese);
+        supplements.add(tomato);
     }
 
     @Override
